@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de pessoas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <header>
+    <h2>Cadastro de Cliente</h2>
+  </header>
+  <!-- Inicio do formulário -->
+  <form action="#" method="post">
+    <!-- Seção principal do formulário -->
+    <section id="principal">
+      <!-- Campo nome -->
+      <div>
+        <div class="clCampos">
+          <label for="nome">Nome<span class="clObrigatorio">*</span>:</label>
+          <input type="text" name="nome" id="nome" placeholder="Digite aqui seu nome">
+        </div>
+        <div class="msgErro" id="erroNome">
+          <p>Erro: Favor preencher o conteúdo!</p>
+        </div>
+      </div>
+      <!-- Campos CPF, Nascimento e Sexo -->
+      <div class="cl3Colunas">
+        <!-- Campo CPF -->
+        <div class="clCampos">
+          <label for="cpf">CPF<span class="clObrigatorio">*</span>:</label>
+          <input type="number" name="cpf" id="cpf" placeholder="Apenas Números">
+        </div>
+        <!-- Campo Nascimento -->
+        <div class="clCampos">
+          <label for="nascimento">Nascimento<span class="clObrigatorio">*</span>:</label>
+          <input type="date" name="nascimento" id="nascimento" placeholder="dd/mm/aaaa">
+        </div>
+        <!-- Campo Sexo -->
+        <div class="clCampos">
+          <label for="sexo">Sexo<span class="clObrigatorio">*</span>:</label>
+          Feminino<input type="radio" name="sexo" id="feminino" value="F">
+          Masculino<input type="radio" name="sexo" id="masculino" value="M">
+        </div>
+      </div>
+      <!-- Campos telefones -->
+      <div class="cl3Colunas">
+        <!-- Campo Telefone -->
+        <div class="clCampos">
+          <label for="telefone">Telefone<span class="clObrigatorio">*</span>:</label>
+          <div class="cjInput">
+            <span class="btnInput"><i class="bi bi-telephone-fill"></i></span>
+            <input type="tel" name="telefone" id="telefone" placeholder="XX XXXXX-XXXX">
+          </div>
+        </div>
+        <!-- Campo Celular -->
+        <div class="clCampos">
+          <label for="celular">Celular<span class="clObrigatorio">*</span>:</label>
+          <div class="cjInput">
+            <span class="btnInput"><i class="bi bi-telephone-fill"></i></span>
+            <input type="tel" name="celular" id="celular" placeholder="XX XXXXX-XXXX">
+          </div>
+        </div>
+      </div>
+      <!-- Campo E-mail -->
+      <div class="cl3Colunas">
+        <!-- Campo e-mail -->
+        <div class="clCampos">
+          <label for="email">Email<span class="clObrigatorio">*</span>:</label>
+          <div class="cjInput">
+            <span class="btnInput"><i class="bi bi-envelope-fill"></i></span>
+            <input type="tel" name="email" id="email" placeholder="email@email.com">
+          </div>
+        </div>
+      </div>
+      <!-- Campo Cep, Botão Pesquisa -->
+      <div class="cl3Colunas">
+        <!-- campo cep -->
+        <div class="clCampos">
+          <label for="email">CEP<span class="clObrigatorio">*</span>:</label>
+          <input type="number" name="cep" id="cep" placeholder="Apenas Números">
+        </div>
+        <div class="clCampos">
+          <span class="btn" id="pesqCep">Pesquisar</span>
+        </div>
+      </div>
+      <!-- Campos Endereço, Número e Bairro -->
+      <div class="cl3Colunas">
+        <!-- campo Endereço -->
+        <div class="clCampos">
+          <label for="endereco">Endereço<span class="clObrigatorio">*</span>:</label>
+          <div class="cjInput">
+            <span class="btnInput">Rua<span class="clObrigatorio">*</span></span>
+            <input type="text" name="endereco" id="endereco">
+          </div>
+        </div>
+        <!-- Campo de Número -->
+        <div class="clCampos">
+          <div class="cjInput">
+            <span class="btnInput">Nº<span class="clObrigatorio">*</span></span>
+            <input type="text" name="nro" id="nro">
+          </div>
+        </div>
+        <!-- Campo de Bairro -->
+        <div class="clCampos">
+          <div class="cjInput">
+            <span class="btnInput">Bairro<span class="clObrigatorio">*</span></span>
+            <input type="text" name="bairro" id="bairro">
+          </div>
+        </div>
+      </div>
+      <!-- Campos Complemento, Cidade, UF  -->
+      <div class="cl3Colunas">
+        <!-- campo Complemento -->
+        <div class="clCampos">
+          <label for="complemento">Complemento:</label>
+          <input type="text" name="complemento" id="complemento">
+        </div>
+        <!-- Campo de Cidade -->
+        <div class="clCampos">
+          <label for="Cidade">Cidade<span class="clObrigatorio">*</span></label>
+          <input type="text" name="cidade" id="cidade">
+        </div>
+        <!-- Campo de Estado -->
+        <div class="clCampos">
+          <label for="estado">Estado<span class="clObrigatorio">*</span></label>
+          <input type="text" name="estado" id="estado">
+        </div>
+      </div>
+      <div class="cl3Colunas">
+        <div class="clCampos">
+          <input type="submit" value="Cadastrar">
+        </div>
+        <div class="clCampos">
+          <input type="reset" value="Cancelar">
+        </div>
+      </div>
+      <!-- Div para mostrar as mensagens de erros nos campos -->
+      <div class="msgErros"></div>
+    </section>
+  </form>
+  <script src="assets/js/codigo.js"></script>
+</body>
+</html>

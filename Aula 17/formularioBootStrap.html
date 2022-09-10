@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+
+<body>
+  <div>
+    <h2>Cadatro de clientes</h5>
+  </div>
+  <!--Nome-->
+  <form class="row g-3">
+    <div class="col-md-12">
+      <label for="inputName" class="form-label">Nome</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+        <input type="text" class="form-control" placeholder="Digite seu nome" aria-label="Nome" aria-describedby="basic-addon1">
+      </div>      
+    </div>
+    <!--CPF, Nasc, Sexo-->
+    <div class="col-md-5">
+      <label for="inputCPF" class="form-label">CPF</label>
+      <input type="text" class="form-control" id="inputCPF" placeholder="XXX-XXX-XXX.XX">
+    </div>
+    <div class="col-md-4">
+      <label for="inputDtNas" class="form-label">Nascimeto</label>
+      <input type="date" class="form-control" id="inputDtNas">
+    </div>
+    <div class="col-md-1">
+      <label for="selSexo" class="form-label">Sexo</label>
+    </div>
+    <div class="col-md-1">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Maculino</label>
+    </div>
+    <div class="col-md-1">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">Feminino</label>
+    </div>
+
+    <!--Telefone, Celular-->
+    <div class="col-md-6">
+      <label for="inputTelefone" class="form-label">Telefone</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2"><i class="bi bi-telephone-fill"></i></span>
+        <input type="text" class="form-control" placeholder="(XX) XXXX-XXXX" aria-label="Telefone" aria-describedby="basic-addon2">
+      </div>      
+    </div>
+    <div class="col-md-6">
+      <label for="inputCelular-3">
+        <span class="input-group-text" id="basic-addon3"><i class="bi bi-phone-fill"></i></span>
+        <input type="text" class="form-control" placeholder="(XX) X XXXX-XXXX" aria-label="Celular" aria-describedby="basic-addon3">
+      </div>      
+    </div>
+
+    <!--Email-->
+    <div class="col-md-12">
+      <label for="inputEmail" class="form-label">Email</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon4"><i class="bi bi-envelope-fill"></i></span>
+        <input type="text" class="form-control" placeholder="Digite Email" aria-label="Email" aria-describedby="basic-addon4">
+      </div>      
+    </div>
+
+    <!--CEP, Btn-->
+    <div class="col-md-4">
+      <label for="inputCEP" class="form-label">CEP</label>
+      <input type="text" class="form-control" id="inputCEP" placeholder="Digite seu CEP">
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">&nbsp;</label>
+      <button type="button" class="btn btn-primary form-control">Pesquisar</button>
+    </div>
+
+    <!--Endereço-->
+    <div class="col-md-7">
+      <label for="inputEndereco" class="form-label">Endereço</label>
+      <input type="text" class="form-control" id="inputEndereco" placeholder="Digite seu Endereço">
+    </div>
+    <div class="col-md-2">
+      <label for="inputRua" class="form-label">Rua</label>
+      <input type="text" class="form-control" id="inputRua">
+    </div>
+    <div class="col-md-1">
+      <label for="inputNumber" class="form-label">Nº</label>
+      <input type="text" class="form-control" id="inputNumber">
+    </div>
+    </div>
+    <div class="col-md-2">
+      <label for="inputBairro" class="form-label">Bairro</label>
+      <input type="text" class="form-control" id="inputBairro">
+    </div>
+
+    <!--Complemento-->
+    <div class="col-md-4">
+      <label for="inputComplemento" class="form-label">Complemento</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Não obrigatorio">
+    </div>
+    <div class="col-md-4">
+      <label for="inputCidade" class="form-label">Cidade</label>
+      <input type="text" class="form-control" id="inputCidade">
+    </div>
+    <div class="col-md-4">
+      <label for="inputEstado" class="form-label">Estado</label>
+      <input type="text" class="form-control" id="inputEstado">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Lembrar-Me
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">&nbsp;</label>
+      <button type="button" class="btnCadastrar btn-primary form-control">Cadastrar</button>
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">&nbsp;</label>
+      <button type="button" class="btnCancelar btn-primary form-control">Cancelar</button>
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">&nbsp;</label>
+      <button type="button" class="btnLimpar btn-primary form-control">Limpar</button>
+    </div>
+  </form>
+
+
+
+  <!--JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

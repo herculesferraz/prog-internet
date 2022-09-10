@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de furmulario</title>
+    <style>
+        div {
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Exemplo de 1 formulario</h1>
+    </header>
+    <section id="sumario">
+        <h2>Indice de tags html</h2>
+        <div style="display: flex;flex-direction: ;row">
+            <fieldset id="inputs">
+                <legend>Tipos de inputs</legend>
+                <ul>
+                    <li><a href="#button">button</a></li>
+                    <li><a href="#usoTabaco">checkbox</a></li>
+                    <li><a href="#color">color</a></li>
+                    <li><a href="#dtnasc">date</a></li>
+                    <li><a href="#usoDateTimeLocal">datetime-local</a></li>
+                    <li><a href="#email">email</a></li>
+                    <li><a href="#envFile">file</a></li>
+                    <li><a href="#id">hidden</a></li>
+                    <li><a href="#image">image</a></li>
+                    <li><a href="#mesPagamento">month</a></li>
+                    <li><a href="#idade">number</a></li>
+                    <li><a href="#senha">password</a></li>
+                    <li><a href="#estadoCasado">radio</a></li>
+                    <li><a href="#grauDeSatisfação">range</a></li>
+                    <li><a href="#btnLimpar">reset</a></li>
+                    <li><a href="#pesquisar">search</a></li>
+                    <li><a href="#btnEnviar">submit</a></li>
+                    <li><a href="#telefone">tel</a></li>
+                    <li><a href="#navegador">text com data list</a></li>
+                    <li><a href="#horaPreenchimento">time</a></li>
+                    <li><a href="#pagina">url</a></li>
+                    <li><a href="#semana">week</a></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Seletores</legend>
+                <ul>
+                    <li><a href="#" </li> selecione uma linha</a></li>
+                    <li><a href="#" </li> selecione uma lista</a></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Datalist</legend>
+                <ul>
+                    <li><a href="#inputLegumes">Legumes</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#selTimes">Times</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#selJogos">Jogos</a></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>TextArea</legend>
+                <ul>
+                    <li><a href="#txtRelat">Relato Jogos</a></li>
+                </ul>
+            </fieldset>
+        </div>
+    </section>
+    <section id="cadastro">
+        <h2>inicio do formulario</h2>
+        <form action="#">
+            <!--Uso do campo hiden pré-definido-->
+            <label for="campoHidden">Aqui jás um compo hidden:</label>
+            <input type="hidden" name="campoHidden" id="id">
+
+            <!--Botão-->
+            <div>
+                <label for="button">Exemplo de button:</label>
+                <input type="button" value="Clique-me" id="button" onclick="alert('Olá Mundin');">
+            </div>
+            <!--Date time local-->
+            <div>
+                <label for="usoDateTimeLocal">Digite a data de preencimento do formulario</label>
+                <input type="datetime-local" name="usoDateTimeLocal" id="usoDateTimeLocal">
+            </div>
+            <!--Hora do preencimento-->
+            <div>
+                <label for="horaPreenchimento">Hora do preencimento do formulario</label>
+                <input type="time" name="horaPreenchimento" id="horaPreenchimento">
+            </div>
+            <!--uso do Week-->
+            <div>
+                <label for="semana">Digite qual sema você esta</label>
+                <input type="week" name="semana" id="semana">
+            </div>
+            <!--Nome-->
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite aqui seu nome">
+            </div>
+            <!--Email-->
+            <div>
+                <label for="email">Digite seu email:</label>
+                <input type="email" name="email" id="email" required placeholder="Digite aqui seu Email">
+            </div>
+            <!--Endereço-->
+            <div>
+                <label for="endereço">Endereço:</label>
+                <input type="text" name="endereço" id="endereço" size="50" required
+                    placeholder="Digite aqui seu Endereço">
+            </div>
+            <!--Telefone-->
+            <div>
+                <label for="telefone">Digite seu Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" </div>
+                <!--Data de Nascimento-->
+                <div>
+                    <label for="dtnasc">Data de Nascimento:</label required>
+                    <input type="date" name="dtnasc" id="dtnasc">
+                </div>
+                <!--Idade-->
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="idade" id="idade" required minlength="4" maxlength="20">
+                </div>
+                <!--Uso do Range-->
+                <label for="grauDeSatisfação">Indique o grau de satisfação</label>
+                <div></div>
+                <input type="range" name="grau" id="grauDeSatisfação" min="0" max="10" step="1" list="lstNotas">
+                <datalist id="lstNotas">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+                <!--Uso do data list para um text-->
+                <div>
+                    <label for="navegador">Escolha o navegador de sua preferencia:</label>
+                    <input type="text" name="navegador" id="navegador" list="ltsNavegador">
+                    <datalist id="ltsNavegador">
+                        <option value="Chrome"></option>
+                        <option value="Edge"></option>
+                        <option value="Opera"></option>
+                        <option value="OperaGX"></option>
+                        <option value="Safari"></option>
+                        <option value="FireFox"></option>
+                    </datalist>
+                </div>
+                <!--udo do URL-->
+                <div>
+                    <label for="pagina">Indique o Endereço da pagina pessoal</label>
+                    <input type="url" name="pagina" id="pagina">
+                </div>
+                <!--Uso do month-->
+                <div>
+                    <label for="mesPagamento">Indique o mes de pagamento da sua assinatura perante o formulario</label>
+                    <input type="month" name="mesPagamento" id="mesPagamento">
+                </div>
+                <!--Senha-->
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required minlength="4" maxlength="20"
+                        placeholder="Digite aqui sua senha">
+                </div>
+                <!--Uso do CheckBox-->
+                <div>
+                    <fieldset>
+                        <legend>Estilo de vida</legend>
+                        <div>
+                            <input type="checkbox" nome="usoTabaco" id="usoTabaco">
+                            <label for="usoTabaco">Você Fuma?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="praticaEspore" id="praticaEsporte">
+                            <label for="praticaEsporte">Você pratica esporte?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="usoAlcool" id="usoAlcool">
+                            <label for="usoAlcool">Você ingere Alcool durante a semana?</label>
+                        </div>
+                    </fieldset>
+                    <!--Usando Radio-->
+                    <div>
+                        <fieldset>
+                            <legend>Estado Civil</legend>
+                            <div>
+                                <input type="radio" name="estadoCivil" id="estadoCasado" value="casado">
+                                <label for="estadoCasado">Casado</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="estadoCivil" id="estadoSolteiro" value="solteiro">
+                                <label for="estadoSolteiro">Solteiro</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="estadoCivil" id="estadoDesquisitado" value="desquisitado">
+                                <label for="estadoDesquisitado">Desquisitado</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="estadoCivil" id="estadoseparado" value="separado">
+                                <label for="estadoSeparado">Seprado</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="estadoCivil" id="estadoViuvo" value="viuvo">
+                                <label for="estadoViuvo">Viuvo</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <!--Color-->
+                    <div>
+                        <label for="color">Cor favorita:</label>
+                        <div>
+                        </div>
+                        <input type="color" id="color" name="color">
+                    </div>
+                    <!--Uso do file com mais arquivos-->
+                    <label for="usoFlieMaisArquivos">Envie fotos para verificação:</label>
+                    <input type="file" name="usoFlieMaisArquivos" id="usoFlieMaisArquivos" multiple>
+                    <!--Uso do search-->
+                    <div>
+                        <label for="pesquisar">Digite sua Pesquisa</label>
+                        <input type="search" name="pesquisar" id="pesquisar">
+                    </div>
+                    <!--File-->
+                    <div>
+                        <label for="envFile">Envie uma foto sua:</label>
+                        <div></div>
+                        <input type="file" name="envFile" id="envFile" required>
+                    </div>
+                    <!--Uso input Image-->
+                    <div>
+                        <label for="usoInputImage">Imagem</label>
+                        <div></div>
+                        <input type="image"
+                            src="https://images.kabum.com.br/produtos/fotos/133028/placa-de-video-asus-rog-strix-nvidia-geforce-rtx-3090-24gb-gddr6-rog-strix-rtx3090-o24g-white_1613654067_g.jpg"
+                            alt="Imagem de uma 3090 Rog_Strix" width="200" id="image">
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Uso do datalist</legend>
+                            <div>
+                                <label for="inputLegumes">Legumes:</label>
+                                <input type="text" name="inputLegumes" id="inputLegumes" list="listLegumes">
+                                <datalist id="listLegumes">
+                                    <option value="01">Cenoura</option>
+                                    <option value="02">Beringela</option>
+                                    <option value="03">Cebola</option>
+                                    <option value="04">Batata</option>
+                                    <option value="04">Pimentão</option>
+                                    <option value="05">Brocolis c/ queijo + bacon</option>
+                                </datalist>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Seletores</legend>
+                            <div>
+                                <label for="selTime">Time Do coração</label>
+                                <select name="selTime" id="selTime">
+                                    <optgroup label="Times CSGO top One">
+                                        <option value="01">Imperial</option>
+                                        <option value="02">Furia</option>
+                                        <option value="03">MIBR</option>
+                                        <option value="04">Astralis</option>
+                                        <option value="04">NAVI</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="selJogos">Jogos:</label>
+                                <div></div>
+                                <select name="selJogos" id="selJogos" multiple size="5">
+                                    <optgroup label="Aventura">
+                                        <option value="01">The Witcher 3</option>
+                                        <option value="02">Skyrin</option>
+                                    </optgroup>
+                                    <optgroup label="RPG">
+                                        <option value="01">Dark Souls 3</option>
+                                        <option value="02">Final Fantasy VII</option>
+                                    </optgroup>
+                                    <optgroup label="Indie">
+                                        <option value="01">Hollow Kingit</option>
+                                        <option value="02">Limbo</option>
+                                    </optgroup>
+                                    <optgroup label="FPS">
+                                        <option value="01">CSGO</option>
+                                        <option value="02">Warzone</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Usando Text Area</legend>
+                            <div>
+                                <label for="txtRelat">Relatos sobre os jogos selecionados</label>
+                                <div></div>
+                                <textarea name="tsxRelat" id="txtRelat" cols="30" rows="10"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="enviar" id="btnEnviar">
+                    <input type="reset" value="limpar" id="btnLimpar">
+        </form>
+    </section>
+</body>
+</html>

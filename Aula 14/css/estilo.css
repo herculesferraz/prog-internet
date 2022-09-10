@@ -1,0 +1,86 @@
+/* */
+header {
+  text-align: left;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* border: 1px solid rgb(202, 28, 28); */
+  padding: 2px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.316) /*cor do fundo*/
+}
+header h3 {
+  flex: 1;
+  color: white;
+}
+.clOperacoes {
+  display: grid;
+  grid-template-columns: 58px 58px 58px 58px 58px;
+  grid-template-rows: 58px 58px 58px 58px 58px;
+  gap: 2px;
+  width: 300px;
+  height: 298px;
+  /* border: 1px solid rgb(218, 18, 18); */
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.296) /*cor do fundo*/
+}
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border: px solid silver;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover:not(.btneq) {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+.btneq {
+  background-color: rgba(255, 255, 255, 0.241);
+  color: #000000;
+}
+.btneq:hover{
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: 1px rgba(0, 0, 0, 0.234);
+  color: rgb(255, 255, 255);
+}
+.clDisplay {
+  width: 300px;
+  font-family: 'Orbitron',Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  padding: 1px;
+  /* border: 1px solid rgb(204, 27, 27); */
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.296) /*cor do fundo*/
+}
+.clDisplay div {
+  display: flex;
+  text-align: right;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.604);
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.clDisplay div h4 {
+  flex: 1;
+  margin-right: 10px;
+}
+.clDisplay:hover {
+  cursor: pointer;
+}
+body {
+  display: block;
+  margin: 8px;
+  background-color: rgba(0, 0, 0, 0.296) /*cor do fundo*/
+}
+.botao {
+  color: rgb(17, 17, 17);
+  background-color: rgb(0, 0, 0);
+}

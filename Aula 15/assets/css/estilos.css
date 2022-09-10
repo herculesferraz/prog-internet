@@ -1,0 +1,79 @@
+* { font-family: Verdana, Geneva, Tahoma, sans-serif; }
+header {
+    background-color: rgb(33, 33, 34);
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+header h2 {
+    margin-left: 10px;
+}
+.clCampos {
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    align-items: center;
+}
+.clCampos input:not([type=radio]){
+    width: 100%;
+    border-radius: 5px;
+    height: 25px;
+    border: 1px solid silver;
+}
+.cjInput {
+    display: flex;
+}
+.btnInput {
+    background-color: darkgrey;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+}
+.cjInput input {
+    border-radius: 0 5px 5px 0 !important;
+}
+.cl3Colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.clObrigatorio{
+    color: red;
+}
+.btn {
+    background-color: rgb(30, 30, 38);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 137);
+}
+.clCampos input[type=submit]{
+    background-color: green;
+    color: white;
+    height: 30px;
+}
+.clCampos input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(0, 65, 0);
+}
+.clCampos input[type=reset]{
+    background-color: red;
+    color: white;
+    height: 30px;
+}
+.clCampos input[type=reset]:hover{
+    background-color: rgb(173, 0, 0);
+    cursor: pointer;
+}
+.msgErro{
+    display: none;
+    color: red;
+}
+.msgErro.show{
+    display: block;
+}
+.msgErros{
+    color: red;
+}

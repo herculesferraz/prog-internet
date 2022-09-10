@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pai {
+            background-color: red;
+            padding: 30px;
+        }
+        #filho {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pai">
+    <div id="filho">
+        clique em mim
+    </div>
+    </div>
+    <script>
+        const div=document.queryCommandSelectorAll("div");
+        divs.forEach(element => {
+            div.addEventListener("click",()=>{
+                alert(" Div " + div.id + "foi clicado! Cor:" +
+                eln.style.backgroundColor);
+            })
+        });
+    </script>
+</body>
+</html>

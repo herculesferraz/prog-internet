@@ -1,0 +1,12 @@
+.btnCadastrar{
+    background-color:green;
+    color: white;
+}
+.btnCancelar{
+    background-color: red;
+    color: white;
+}
+.btnLimpar{
+    background-color: white;
+    color: blue;
+}
