@@ -1,0 +1,15 @@
+table, tr, td {
+  border: 1px solid silver;
+}
+td {
+  padding: 3px;
+}
+table {
+  margin: 20px auto;
+}
+.txtCenter {
+  text-align: center;
+}
+#respostas{
+  border: 1px  solid black;
+}

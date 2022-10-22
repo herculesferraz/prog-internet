@@ -1,0 +1,8 @@
+#margem{
+    border: 1px solid black;
+    text-align: center;
+}
+#margemLogin{
+    margin-bottom: 7px;
+    flex-direction: column-reverse;
+}
